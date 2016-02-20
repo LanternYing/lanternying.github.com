@@ -1,4 +1,2 @@
-lanternying.github.com
-======================
-
-this is my online resume. 
+Personal site
+(to be) hosted at: jsntsay.com
