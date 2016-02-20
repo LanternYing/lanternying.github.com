@@ -1,65 +1,62 @@
 ---
-title: Jason Tsay
+title: Haochao Ying
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        {% include includes.html %}
-        <title>Jason Tsay</title>
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/jquery.fullPage.css">
-        <script type="text/javascript" src="js/jquery.easings.min.js"></script>
-        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
-        <script src="js/index.js"></script>
+        <meta charset='utf-8'>
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=greek,greek-ext' rel='stylesheet' type='text/css'>
+        <link href="css/font.css" rel="stylesheet" style type="text/css">
+        <script src="javascripts/jquery.js" type="text/javascript"></script>
+        <script src="javascripts/facebox.js" type="text/javascript"></script>
+        <script type="text/javascript"> jQuery(document).ready(function($) {  $('a[rel*=facebox]').facebox()  }); window.onload = function() { load() }; </script>
+        <!--[if lt IE 9]>   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>   <![endif]-->
+        <title>haochao Ying (Lantern) | Zhejiang University</title>
     </head>
 
     <body>
-        <div id="fullpage">
-            <div id="profilesection" class="section" data-anchor="profile">
-                <div class="sidebar">
-                </div>
-                <h1 id="name" class="offset"> Jason Tsay </h1>
-                <h3 id="email" class="offset">jtt<a href="http://www.google.com/recaptcha/mailhide/d?k=01f1EnTmGoE9mi37OKJxVNqw==&amp;c=dPlxcgu_gS7R-gdjjroB3Q==" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501f1EnTmGoE9mi37OKJxVNqw\75\75\46c\75dPlxcgu_gS7R-gdjjroB3Q\75\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;" title="Reveal this e-mail address">...</a>@jsntsay.com</h3>
-                <ul id="vmenu">
-                    <li class="selected" id="profilebutton">Profile</li>
-                    <li id="workbutton"> Work </li>
-                    <li id="resumebutton"> Resume </li>
-                    <li id="pubbutton"> Publications </li>
-                </ul>
-                <ul id="sociallinks">
-                    <li><a href="https://twitter.com/jsntsay"><img src="img/twitter.png" class="icon"></a></li>
-                    <li><a href="https://github.com/jsntsay"><img src="img/github.png" class="icon"></a></li>
-                    <li><a href="http://www.linkedin.com/pub/jason-tsay/17/0/122"><img src="img/linkedin.png" class="icon"></a></li>
-                    <li><a href="https://plus.google.com/101105323702916978865"><img src="img/googleplus.jpg" class="icon"></a></li>
-                    <li><a href="https://www.facebook.com/jsntsay"><img src="img/fb.png" class="icon"></a></li>
-                </ul>
-                <div class="sidebox">
-                    <div class="avatar">
-                        <img src="img/avatar.jpg" id="avatar" class="img-responsive" alt="Jason Tsay">
+        <div class="main_container">
+            <div class="profile_container">
+
+            <div class="header">
+                <div class="name">Haochao Ying</div>
+                <div class="headline">PhD Candidate (2th year)</div>
+                    <div class="buttonbar"><div class="button">
+                        <a href="#bio" rel="facebox" class="button blue first">Experience</a>
+                        <a href="research.html" class="button green">Research</a>
+                        <a href="publication.html" class="button purple last">Publication</a>
                     </div>
-                    <div class="infobox">
-                        
-                        <p>I'm Jason Tsay, a Software Engineering PhD student at Carnegie Mellon University. My research focuses on how software developers use social and technical information in their environment to inform their development decisions.
-                    </div>
-                </div>
             </div>
-            <div id="worksection" class="section" data-anchor="work">
-                {% include navbar.html %}
-                {% include work.html %}
+            <div class="profile">
+                <div class="edu">Advanced Computing and System Laboratory (CCNT), College of Computer Science & Technology at Zhejiang University<br>   Supervisor: <a href="https://scholar.google.com/citations?user=VO9XIXYAAAAJ&hl=zh-CN" target="_blank">Prof. Jian Wu</a>   </div>
+                <div class="tags">Recommender System, Service Computing</div>
+                <div class="email">haochaoying@zju.edu.cn</div>
+                <div class="telephone">+8618767122656</div>
+                <div class="location">R.m. 422, Cao Guang Biao Main Building,<br>Yu Quan Campus, Zheda Road 38, Hang Zhou</div>
             </div>
-            <div id="resumesection" class="section" data-anchor="resume">
-                {% include navbar.html %}
-                <br>
-                <a href="resume/resume.pdf"><h2>Resume</h2></a>
-                <br>
-                Currently I am not looking for full-time employment but am open to internships.
-            </div>
-            <div id="pubsection" class="section" data-anchor="publications">
-                {% include navbar.html %}
-                {% include pubs.html %}
+            <div class="horizontal_line"></div>
+            <div class="profile">
+                <a href="https://scholar.google.com/citations?user=kV7iOOEAAAAJ&hl=zh-CN" target="_blank" class="scholar"></a>
+                <a href="https://cn.linkedin.com/in/豪超-应-2ab15ba0" target="_blank" class="linkedin"></a>
+                <a href="https://github.com/lanternying" target="_blank" class="github"></a>
+                <a href="http://twitter.com/lanternying" target="_blank" class="twitter"></a>
+                <a href="http://weibo.com/haochaoying" target="_blank" class="weibo"></a>
+                <a href="resume/Curriculum Vitae.pdf" target="_blank" class="cv"></a>
             </div>
         </div>
+        <div class="sidebox">
+            <div class="avatar">
+                <img src="images/avatar.jpg" id="avatar" class="avatar" alt="Jason Tsay">
+            </div>
+            <div class="infobox">
+                I'm currently a second-year Ph.D. student. My research areas includes Service Oriented Computing, Recommendation System and mainly focus on implicit and hybrid recommendation, Point-of-Interest (POI) recommendation, and Quality of Services (QoS) prediction.
+            </div>
+        </div>
+
     </body>
 </html>

@@ -1,224 +1,88 @@
-/* Reset CSS
- * --------------------------------------- */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-    margin: 0;
-}
-a{
-	text-decoration:none;
-}
-table {
-    border-spacing: 0;    
-}
-fieldset,img {
-    border: 0;
-}
-address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
-}
-strong{
-	font-weight: bold;
-}
-ol,ul {
-    list-style: none;
-    margin:0;
-    padding:0;
-}
-abbr,acronym { border: 0;
-}
+html {  overflow-y: scroll; }
+body {  background: rgba(0, 0, 0, 0.1) url(../img/p3pstyle.png) 0 0 no-repeat;  font-family: Helvetica Neue,Open Sans,Helvetica,Tahoma,Arial,Verdana,sans-serif;  font-size: 14pt;  font-weight: 500; } a:link { color: rgba(0, 153, 255, 1); text-decoration: none;} a:visited { color: rgba(0, 153, 255, 1);} a:hover { color: rgba(231, 115, 49, 1);}
 
-/* Page CSS */
+ .main_container{  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   color: rgba(0, 0, 0, 0.8);  width:1520px;  margin-top: 20px;  margin-left: 80px;  margin-right: 20px;  margin-bottom: 20px;  padding-top: 20px;  padding-left: 20px;  padding-right: 20px;  padding-bottom: 20px; }
+ .profile_container{  background-color: rgba(0, 0, 0, 0.25);  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   width:475px;  height:500px;  margin-top: 50px;  margin-left: 0px;  margin-right: auto;  margin-bottom: 40px; }
+ .analytics_container{  width:475px;  position: relative;  margin-left: 830px;  margin-right: auto;  margin-top: 60px;  margin-bottom: auto;  text-align: center;  color: rgba(0, 0, 0, 1); }
 
-/* Screw rounded corners */
-/*
-* {
-  -webkit-border-radius: 0 !important;
-     -moz-border-radius: 0 !important;
-          border-radius: 0 !important;
-}
-*/
+.header { width: 100%; position: relative; text-align: center; color: white; padding-left: 0px; padding-right: 0px; margin-top:5x; }
+.header a:link { color: rgba(255, 255, 100, 1); text-decoration: none;}
+.header a:visited { color: rgba(255, 255, 100, 1);}
+.header a:hover { color: rgba(180, 250, 0, 1);}
+.name { text-align: center; font-size: 70px; font-family: ff-masala-script-web-pro-1, ff-masala-script-web-pro-2, proxima-nova-1, proxima-nova-2, Tahoma, Helvetica, Verdana, sans-serif; font-weight: 400; }
+.headline {  font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif;  font-size: 16pt;  font-weight: normal;  color: #FFFFFF; }
+ol, ul { list-style: none; }
+.buttonbar { padding-left: 70px; position: relative; }
+.buttonbar .button a:link {color: white; text-decoration: none;}
+.buttonbar .button a:visited {color: white; text-decoration: none;}
+.buttonbar .button a:hover { color: white; box-shadow: inset 0 -60px 60px -40px rgba(0,0,0,0.3);}
+.button.first { border-top-left-radius: 5px; border-bottom-left-radius: 5px; }
+.button.last { border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+.button { float: left; margin-right: -1px; margin-top: 10px; margin-bottom: 10px; position: relative; border-radius: 0; font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif;  font-size: 14pt;  font-weight: normal;  text-align: center;  color: #FFFFFF;  zoom: 1;  line-height: 38px; }
+.button.blue { width: 110px; text-align: center; background: rgba(71, 146, 255, 0.8); border: 1.5px solid rgba(255,255,255,0.8); }
+.button.green { width: 110px; text-align: center; background: rgba(73, 192, 129, 0.8); border: 1.5px solid rgba(255,255,255,0.8); }
+.button.purple { width: 110px; text-align: center; background: rgba(173, 104, 215, 0.8); border: 1.5px solid rgba(255,255,255,0.8); }
+.profile {  clear:both;  text-align: left;  padding-left: 20px;  font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif;  font-size: 13pt;  font-weight: normal;  color: #FFFFFF;  position: relative; }
+.profile a:link {text-decoration: none;}
+.profile a:visited {text-decoration: none;}
+.profile a:hover {opacity:0.6;}
+.edu {   background: transparent url(../images/diploma.png) 0 0 no-repeat; display: block; padding-left: 40px; padding-top: 0px; padding-bottom: 5px; position: relative; margin-bottom:10x; }
+.location {   background: transparent url(../images/location.png) 0 0 no-repeat; display: block; padding-left: 40px; padding-top: 3px; padding-bottom: 5px; position: relative; margin-bottom:20x; }
+.tags {   background: transparent url(../images/tags.png) 0 0 no-repeat; display: block; padding-left: 40px; padding-top: 5px; padding-bottom: 5px; position: relative; margin-bottom:10x; }
+.telephone {   background: transparent url(../images/tel.png) 0 0 no-repeat; display: block; padding-left: 40px; padding-top: 3px; padding-bottom: 5px; position: relative; margin-bottom:10x; }
+.email {   background: transparent url(../images/email.png) 0 0 no-repeat; display: block; padding-left: 40px; padding-top: 3px; padding-bottom: 5px; position: relative; margin-bottom:10x; }
+.scholar { width: 32px; float: left;   background: transparent url(../images/scholar.png) 0 0 no-repeat; display: block; padding-top: 5px; padding-bottom: 32px; margin-right: 10px; position: relative; }
+.linkedin { width: 32px; float: left;   background: transparent url(../images/linkedin.png) 0 0 no-repeat; display: block; padding-top: 5px; padding-bottom: 32px; margin-right: 10px; position: relative; }
+.github { width: 32px; float: left;   background: transparent url(../images/github.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
+.twitter { width: 32px; float: left;   background: transparent url(../images/twitter.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
+.weibo { width: 32px; float: left;   background: transparent url(../images/weibo.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
+.cv { width: 32px; float: right;   background: transparent url(../images/cv.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
 
-/* General Page CSS */
+.biography{  clear:both;  text-align: left;  padding-left: 20px;  font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif;  font-size: 13pt;  font-weight: normal;  color: #FFFFFF;  position: relative; }
+.horizontal_line {   clear: both;   margin-top: 10px;   margin-bottom: 10px;   border-bottom: solid 1.5px rgba(255, 255, 255, 0.6);   width: 100%; }
+#facebox { position: absolute; top: 0; left: 0; z-index: 100; text-align: left; margin: 20px 20px 20px 20px; }
+#facebox .popup{ position:relative; width: 100%; /* round the border*/ -moz-border-radius: 10px; -khtml-border-radius: 10px; -webkit-border-radius: 10px; border-radius: 10px; border:2px solid #ffffff; background: rgba(50, 200, 200, 0.8); }
+#facebox .content {   clear:both; font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif; display:table; padding: 10px;   text-align: left;   padding-left: 20px; padding-right: 15px;   font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif;   font-size: 13pt;   font-weight: normal;   color: #FFFFFF;   position: relative; }  #facebox .content a:link { color: rgba(255, 255, 100, 1); text-decoration: none;}
+#facebox .content a:visited { color: rgba(255, 255, 100, 1);}
+#facebox .content a:hover { color: rgba(180, 250, 0, 1);}
+#facebox .close{ position:absolute; top:5px; right:5px; padding:2px; background: transparent; }
+#facebox .close img{ opacity:0.7; } #facebox .close:hover img{ opacity:1.0; }
+#facebox .loading { text-align: center; } #facebox .image { text-align: center; }
+#facebox img { text-align: center; border: 0; margin: 0; }
+#facebox_overlay { position: fixed; top: 0px; left: 0px; height:100%; width:100%; }
+.facebox_hide { z-index:-100; } .facebox_overlayBG { background-color: #000; z-index: 99; }
 
-body{
-	/*background: #ebeae6 url(../img/lines-wallpaper-aqua.gif) top left repeat;*/
-	font-family: Helvetica, Arial, sans-serif;
-}
 
-section {
-	min-width: 960px;
-}
-
-/* Profile Section CSS */
-
-#profilesection {
-	background: #ebeae6 url(../img/p3pstyle.png);
-}
-
-#name {
-	top: 10px;
-	position: relative;
-	font-weight: bold;
-	font-size: 4em;
-	padding-top: 20px;
-	padding-bottom: 10px;
-}
-
-.offset {
-	display: block;
-	position: relative;
-}
-
-h1.offset {
-	left: 100px;
-}
-
-h3.offset {
-	left: 102px;
-}
-
-h4.offset {
-	left: 55px;
-}
-
-ul#vmenu {
-	color: white;
-	font-size: 2em;
-	list-style-type: square;
-	z-index: 2;
-	position: relative;
-	left: 50px;
-	padding-top: 20px;
-}
-
-ul#vmenu > li {
-	padding-left: 50px;
-	width: 350px;
-}
-
-ul#vmenu > li.selected {
-	background: #333;
-}
-
-ul#sociallinks {
-	list-style-type: none;
-	z-index: 2;
-	position: absolute;
-	left: 15px;
-	bottom: 10px;
-	min-height: 100px;
-}
-
-ul#sociallinks > li {
-    padding-bottom: 15px;
-}
-
-.icon {
-    width: 30px;
-    height: 30px;
-	opacity: 0.7;
-}
-
-.sidebar {
-	background: #333;
-	height: 100%;
-	width: 65px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 0;
-}
-
-.fullheight {
-	height: 100%;
-}
-
-.moveup {
-	top: 200px;
-}
 
 .sidebox {
-	display: block;
-	position: absolute;
-	width: 50%;
-	min-width: 500px;
-	min-height: 250px;
-	bottom: 25px;
-	right: 20px;
-	overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 50%;
+    /*min-width: 500px;*/
+    /*min-height: 250px;*/
+    bottom: 150px;
+    right: 20px;
+    overflow: hidden;
 }
 
 .avatar {
-	background-color: white;
+    background-color: white;
     padding: 2px;
     opacity: 1.0;
-	width: 200px;
-	height: 200px;
-	float: right;
+    width: 200px;
+    height: 270px;
+    bottom: 100px;
+    float: right;
 }
 
 .infobox {
-	background-color: white;
-    font-size: 1.2em;
-	display: block;
-	max-height: 200px;
-	opacity: 0.8;
-	padding: 10px;
-	float: right;
+    background-color: white;
+    font-size: 1.0em;
+    display: block;
+    max-height: 100px;
+    opacity: 0.8;
+    padding: 10px;
+    float: right;
 }
 
-/* Other Sections CSS */
 
-#worksection {
-	background: #eee;
-}
-
-#resumesection {
-	background: #ddd;
-}
-
-#pubsection {
-	background: #ccc;
-}
-
-.headerbar {
-	background: #333;
-	height: 50px;
-	width: 100%;
-	top: 0;
-	left: 0;
-	z-index: 0;
-}
-
-ul#hmenu {
-	color: white;
-	font-size: 2em;
-	list-style-type: none;
-	z-index: 2;
-	position: relative;
-	padding-top: 5px;
-}
-
-ul#hmenu > li {
-	display: inline;
-	width: 350px;
-	padding-left: 100px;
-	padding-right: 100px;
-}
-
-.hselected {
-	background: black;
-}
-
-ul#publist {
-    list-style-type: square;
-    padding-left: 50px;
-}
-
-ul#publist > li {
-    font-size: 1.2em;
-    padding-top: 20px;
-    paddihg-left: 5px;
-}
