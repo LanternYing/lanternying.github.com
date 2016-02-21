@@ -3,60 +3,85 @@ title: Haochao Ying
 ---
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset='utf-8'>
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        {% include includes.html %}
+        <title>haochao Ying (Lantern) | Zhejiang University</title>
+
         <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=greek,greek-ext' rel='stylesheet' type='text/css'>
         <link href="css/font.css" rel="stylesheet" style type="text/css">
-        <script src="javascripts/jquery.js" type="text/javascript"></script>
-        <script src="javascripts/facebox.js" type="text/javascript"></script>
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" /> -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+
+        <script type="text/javascript" src="javascripts/jquery.js"></script>
+        <script type="text/javascript" src="javascripts/facebox.js"></script>
+        <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script src="js/index.js"></script>
         <script type="text/javascript"> jQuery(document).ready(function($) {  $('a[rel*=facebox]').facebox()  }); window.onload = function() { load() }; </script>
         <!--[if lt IE 9]>   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>   <![endif]-->
-        <title>haochao Ying (Lantern) | Zhejiang University</title>
+
     </head>
 
     <body>
-        <div class="main_container">
-            <div class="profile_container">
-
-            <div class="header">
-                <div class="name">Haochao Ying</div>
-                <div class="headline">PhD Candidate (2th year)</div>
-                    <div class="buttonbar"><div class="button">
-                        <a href="#bio" rel="facebox" class="button blue first">Experience</a>
-                        <a href="publication.html" class="button purple last">Publication</a>
-                        <a href="research.html" class="button green">Blog</a>
+        <div id="fullpage">
+            <div id="profilesection" class="section" data-anchor="profile">
+                <div class="main_container">
+                    <div class="profile_container">
+                        <div class="header">
+                            <div class="name">Haochao Ying</div>
+                            <div class="headline">PhD Candidate (2th year)</div>
+                            <div id="menu" class="buttonbar">
+                                <div class="button">
+                                    <!-- <a href="#bio" rel="facebox" class="button blue first">Work</a> -->
+                                    <a id="experbutton" class="button blue first"> Experience </a>
+                                    <a id="pubbutton" class="button green"> Publication </a>
+                                    <!-- <a href="research.html" class="button green">Blog</a> -->
+                                    <a href="research.html" class="button purple last"> Blog </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="edu">Advanced Computing and System Laboratory (CCNT), College of Computer Science & Technology at Zhejiang University<br>   Supervisor: <a href="https://scholar.google.com/citations?user=VO9XIXYAAAAJ&hl=zh-CN" target="_blank">Prof. Jian Wu</a>   </div>
+                            <div class="tags">Recommender System, Service Computing</div>
+                            <div class="email">haochaoying@zju.edu.cn</div>
+                            <div class="telephone">+8618767122656</div>
+                            <div class="location">R.m. 422, Cao Guang Biao Main Building,<br>Yu Quan Campus, Zheda Road 38, Hang Zhou</div>
+                        </div>
+                        <div class="horizontal_line"></div>
+                        <div class="profile">
+                            <a href="https://scholar.google.com/citations?user=kV7iOOEAAAAJ&hl=zh-CN" target="_blank" class="scholar"></a>
+                            <a href="https://cn.linkedin.com/in/豪超-应-2ab15ba0" target="_blank" class="linkedin"></a>
+                            <a href="https://github.com/lanternying" target="_blank" class="github"></a>
+                            <a href="http://twitter.com/lanternying" target="_blank" class="twitter"></a>
+                            <a href="http://weibo.com/haochaoying" target="_blank" class="weibo"></a>
+                            <a href="resume/Curriculum Vitae.pdf" target="_blank" class="cv"></a>
+                        </div>
                     </div>
+                </div>
+                <div class="sidebox">
+                    <div class="avatar">
+                        <img src="images/avatar.jpg" id="avatar" class="avatar" alt="Haochao Ying">
+                    </div>
+                    <div class="infobox">
+                        I'm currently a second-year Ph.D. student. My research areas includes Service Oriented Computing, Recommendation System and mainly focus on implicit and hybrid recommendation, Point-of-Interest (POI) recommendation, and Quality of Services (QoS) prediction.
+                    </div>
+                </div>
             </div>
-            <div class="profile">
-                <div class="edu">Advanced Computing and System Laboratory (CCNT), College of Computer Science & Technology at Zhejiang University<br>   Supervisor: <a href="https://scholar.google.com/citations?user=VO9XIXYAAAAJ&hl=zh-CN" target="_blank">Prof. Jian Wu</a>   </div>
-                <div class="tags">Recommender System, Service Computing</div>
-                <div class="email">haochaoying@zju.edu.cn</div>
-                <div class="telephone">+8618767122656</div>
-                <div class="location">R.m. 422, Cao Guang Biao Main Building,<br>Yu Quan Campus, Zheda Road 38, Hang Zhou</div>
-            </div>
-            <div class="horizontal_line"></div>
-            <div class="profile">
-                <a href="https://scholar.google.com/citations?user=kV7iOOEAAAAJ&hl=zh-CN" target="_blank" class="scholar"></a>
-                <a href="https://cn.linkedin.com/in/豪超-应-2ab15ba0" target="_blank" class="linkedin"></a>
-                <a href="https://github.com/lanternying" target="_blank" class="github"></a>
-                <a href="http://twitter.com/lanternying" target="_blank" class="twitter"></a>
-                <a href="http://weibo.com/haochaoying" target="_blank" class="weibo"></a>
-                <a href="resume/Curriculum Vitae.pdf" target="_blank" class="cv"></a>
-            </div>
-        </div>
-        <div class="sidebox">
-            <div class="avatar">
-                <img src="images/avatar.jpg" id="avatar" class="avatar" alt="Jason Tsay">
-            </div>
-            <div class="infobox">
-                I'm currently a second-year Ph.D. student. My research areas includes Service Oriented Computing, Recommendation System and mainly focus on implicit and hybrid recommendation, Point-of-Interest (POI) recommendation, and Quality of Services (QoS) prediction.
-            </div>
-        </div>
 
+            <div id="expersection" class="section" data-anchor="experience">
+                {% include navbar.html %}
+                {% include work.html %}
+            </div>
+
+            <div id="pubsection" class="section" data-anchor="publication">
+                {% include navbar.html %}
+                {% include pubs.html %}
+            </div>
+        </div>
     </body>
 </html>

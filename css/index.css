@@ -1,9 +1,19 @@
 html {  overflow-y: scroll; }
-body {  background: rgba(0, 0, 0, 0.1) url(../img/p3pstyle.png) 0 0 no-repeat;  font-family: Helvetica Neue,Open Sans,Helvetica,Tahoma,Arial,Verdana,sans-serif;  font-size: 14pt;  font-weight: 500; } a:link { color: rgba(0, 153, 255, 1); text-decoration: none;} a:visited { color: rgba(0, 153, 255, 1);} a:hover { color: rgba(231, 115, 49, 1);}
+body {
+    /*background: #ebeae6 url(../img/lines-wallpaper-aqua.gif) top left repeat;*/
+    font-family: Helvetica Neue,Open Sans,Helvetica,Tahoma,Arial,Verdana,sans-serif;
+    font-size: 14pt;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+a:link { color: rgba(0, 153, 255, 1); text-decoration: none;}
+a:visited { color: rgba(0, 153, 255, 1);}
+a:hover { color: rgba(231, 115, 49, 1);}
 
- .main_container{  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   color: rgba(0, 0, 0, 0.8);  width:1520px;  margin-top: 20px;  margin-left: 80px;  margin-right: 20px;  margin-bottom: 20px;  padding-top: 20px;  padding-left: 20px;  padding-right: 20px;  padding-bottom: 20px; }
- .profile_container{  background-color: rgba(0, 0, 0, 0.25);  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   width:475px;  height:500px;  margin-top: 50px;  margin-left: 0px;  margin-right: auto;  margin-bottom: 40px; }
- .analytics_container{  width:475px;  position: relative;  margin-left: 830px;  margin-right: auto;  margin-top: 60px;  margin-bottom: auto;  text-align: center;  color: rgba(0, 0, 0, 1); }
+.main_container{  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   color: rgba(0, 0, 0, 0.8);  width:1520px;  margin-top: 20px;  margin-left: 80px;  margin-right: 20px;  margin-bottom: 20px;  padding-top: 20px;  padding-left: 20px;  padding-right: 20px;  padding-bottom: 20px; }
+.profile_container{  background-color: rgba(0, 0, 0, 0.25);  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   width:475px;  height:500px;  margin-top: 50px;  margin-left: 0px;  margin-right: auto;  margin-bottom: 40px; }
+.analytics_container{  width:475px;  position: relative;  margin-left: 830px;  margin-right: auto;  margin-top: 60px;  margin-bottom: auto;  text-align: center;  color: rgba(0, 0, 0, 1); }
 
 .header { width: 100%; position: relative; text-align: center; color: white; padding-left: 0px; padding-right: 0px; margin-top:5x; }
 .header a:link { color: rgba(255, 255, 100, 1); text-decoration: none;}
@@ -83,6 +93,66 @@ ol, ul { list-style: none; }
     opacity: 0.8;
     padding: 10px;
     float: right;
+}
+
+section {
+    min-width: 960px;
+}
+
+#profilesection {
+    background: #ebeae6 url(../images/p3pstyle.png);
+}
+
+#expersection {
+    background: #eee;
+}
+
+/*#resumesection {
+    background: #ddd;
+}
+*/
+#pubsection {
+    background: #ccc;
+}
+
+.headerbar {
+    background: #333;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+ul#hmenu {
+    color: white;
+    font-size: 2em;
+    list-style-type: none;
+    z-index: 2;
+    position: relative;
+    padding-top: 5px;
+}
+
+ul#hmenu > li {
+    display: inline;
+    width: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.hselected {
+    background: black;
+}
+
+ul#publist {
+    list-style-type: square;
+    padding-left: 50px;
+}
+
+ul#publist > li {
+    font-size: 1.2em;
+    padding-top: 20px;
+    paddihg-left: 5px;
 }
 
 

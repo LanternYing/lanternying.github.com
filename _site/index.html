@@ -1,58 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset='utf-8'>
-        <meta http-equiv="X-UA-Compatible" content="chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8"> -->
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="css/navbar.css" rel="stylesheet" media="screen">
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="../../assets/js/html5shiv.js"></script>
+    <script src="../../assets/js/respond.min.js"></script>
+<![endif]-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <title>haochao Ying (Lantern) | Zhejiang University</title>
+
         <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600&subset=greek,greek-ext' rel='stylesheet' type='text/css'>
         <link href="css/font.css" rel="stylesheet" style type="text/css">
-        <script src="javascripts/jquery.js" type="text/javascript"></script>
-        <script src="javascripts/facebox.js" type="text/javascript"></script>
+
+        <!-- <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" /> -->
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+
+        <script type="text/javascript" src="javascripts/jquery.js"></script>
+        <script type="text/javascript" src="javascripts/facebox.js"></script>
+        <script type="text/javascript" src="js/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+        <script src="js/index.js"></script>
         <script type="text/javascript"> jQuery(document).ready(function($) {  $('a[rel*=facebox]').facebox()  }); window.onload = function() { load() }; </script>
         <!--[if lt IE 9]>   <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>   <![endif]-->
-        <title>haochao Ying (Lantern) | Zhejiang University</title>
+
     </head>
 
     <body>
-        <div class="main_container">
-            <div class="profile_container">
-
-            <div class="header">
-                <div class="name">Haochao Ying</div>
-                <div class="headline">PhD Candidate (2th year)</div>
-                    <div class="buttonbar"><div class="button">
-                        <a href="#bio" rel="facebox" class="button blue first">Experience</a>
-                        <a href="publication.html" class="button purple last">Publication</a>
-                        <a href="research.html" class="button green">Blog</a>
+        <div id="fullpage">
+            <div id="profilesection" class="section" data-anchor="profile">
+                <div class="main_container">
+                    <div class="profile_container">
+                        <div class="header">
+                            <div class="name">Haochao Ying</div>
+                            <div class="headline">PhD Candidate (2th year)</div>
+                            <div id="menu" class="buttonbar">
+                                <div class="button">
+                                    <!-- <a href="#bio" rel="facebox" class="button blue first">Work</a> -->
+                                    <a id="experbutton" class="button blue first"> Experience </a>
+                                    <a id="pubbutton" class="button green"> Publication </a>
+                                    <!-- <a href="research.html" class="button green">Blog</a> -->
+                                    <a href="research.html" class="button purple last"> Blog </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="edu">Advanced Computing and System Laboratory (CCNT), College of Computer Science & Technology at Zhejiang University<br>   Supervisor: <a href="https://scholar.google.com/citations?user=VO9XIXYAAAAJ&hl=zh-CN" target="_blank">Prof. Jian Wu</a>   </div>
+                            <div class="tags">Recommender System, Service Computing</div>
+                            <div class="email">haochaoying@zju.edu.cn</div>
+                            <div class="telephone">+8618767122656</div>
+                            <div class="location">R.m. 422, Cao Guang Biao Main Building,<br>Yu Quan Campus, Zheda Road 38, Hang Zhou</div>
+                        </div>
+                        <div class="horizontal_line"></div>
+                        <div class="profile">
+                            <a href="https://scholar.google.com/citations?user=kV7iOOEAAAAJ&hl=zh-CN" target="_blank" class="scholar"></a>
+                            <a href="https://cn.linkedin.com/in/豪超-应-2ab15ba0" target="_blank" class="linkedin"></a>
+                            <a href="https://github.com/lanternying" target="_blank" class="github"></a>
+                            <a href="http://twitter.com/lanternying" target="_blank" class="twitter"></a>
+                            <a href="http://weibo.com/haochaoying" target="_blank" class="weibo"></a>
+                            <a href="resume/Curriculum Vitae.pdf" target="_blank" class="cv"></a>
+                        </div>
                     </div>
+                </div>
+                <div class="sidebox">
+                    <div class="avatar">
+                        <img src="images/avatar.jpg" id="avatar" class="avatar" alt="Haochao Ying">
+                    </div>
+                    <div class="infobox">
+                        I'm currently a second-year Ph.D. student. My research areas includes Service Oriented Computing, Recommendation System and mainly focus on implicit and hybrid recommendation, Point-of-Interest (POI) recommendation, and Quality of Services (QoS) prediction.
+                    </div>
+                </div>
             </div>
-            <div class="profile">
-                <div class="edu">Advanced Computing and System Laboratory (CCNT), College of Computer Science & Technology at Zhejiang University<br>   Supervisor: <a href="https://scholar.google.com/citations?user=VO9XIXYAAAAJ&hl=zh-CN" target="_blank">Prof. Jian Wu</a>   </div>
-                <div class="tags">Recommender System, Service Computing</div>
-                <div class="email">haochaoying@zju.edu.cn</div>
-                <div class="telephone">+8618767122656</div>
-                <div class="location">R.m. 422, Cao Guang Biao Main Building,<br>Yu Quan Campus, Zheda Road 38, Hang Zhou</div>
-            </div>
-            <div class="horizontal_line"></div>
-            <div class="profile">
-                <a href="https://scholar.google.com/citations?user=kV7iOOEAAAAJ&hl=zh-CN" target="_blank" class="scholar"></a>
-                <a href="https://cn.linkedin.com/in/豪超-应-2ab15ba0" target="_blank" class="linkedin"></a>
-                <a href="https://github.com/lanternying" target="_blank" class="github"></a>
-                <a href="http://twitter.com/lanternying" target="_blank" class="twitter"></a>
-                <a href="http://weibo.com/haochaoying" target="_blank" class="weibo"></a>
-                <a href="resume/Curriculum Vitae.pdf" target="_blank" class="cv"></a>
-            </div>
-        </div>
-        <div class="sidebox">
-            <div class="avatar">
-                <img src="images/avatar.jpg" id="avatar" class="avatar" alt="Jason Tsay">
-            </div>
-            <div class="infobox">
-                I'm currently a second-year Ph.D. student. My research areas includes Service Oriented Computing, Recommendation System and mainly focus on implicit and hybrid recommendation, Point-of-Interest (POI) recommendation, and Quality of Services (QoS) prediction.
-            </div>
-        </div>
 
+            <div id="expersection" class="section" data-anchor="experience">
+                <div class="navbar navbar-inverse  navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav nav-justified">
+            <li class="profilenav"><a href="#profile">Profile</a></li>
+            <li class="expernav"><a href="#experience">Experience</a></li>
+            <!-- <li class="resumenav"><a href="#resume">Resume</a></li> -->
+            <li class="pubsnav"><a href="#publication">Publication</a></li>
+            <li class="blognav"><a href="#blog">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+                <h1> Current Work </h1>
+<br>
+
+11/14/2014
+
+<br><br>
+
+Heading to FSE 2014 in Hong Kong! If you happen to be there, say hello to me!
+
+<br>
+
+I'll be talking about an accepted paper: <a href="work/FSE2014/index.html">Let’s Talk About It: Evaluating Contributions through Discussion in GitHub</a>
+
+<br>
+
+
+
+            </div>
+
+            <div id="pubsection" class="section" data-anchor="publication">
+                <div class="navbar navbar-inverse  navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav nav-justified">
+            <li class="profilenav"><a href="#profile">Profile</a></li>
+            <li class="expernav"><a href="#experience">Experience</a></li>
+            <!-- <li class="resumenav"><a href="#resume">Resume</a></li> -->
+            <li class="pubsnav"><a href="#publication">Publication</a></li>
+            <li class="blognav"><a href="#blog">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+
+                <h1> Publications </h1>
+<br>
+
+<ul id="publist">
+    <li> Tsay, J., Dabbish, L. and Herbsleb, J. 2014. <a href="work/FSE2014/index.html"><b>Let’s Talk About It: Evaluating Contributions through Discussion in GitHub</b></a>. Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (2014) </li><a href="publications/tsay-fse2014.pdf">(pdf)</a>
+    <li> Tsay, J., Dabbish, L. and Herbsleb, J. 2014. <b>Influence of Social and Technical Factors for Evaluating Contribution in GitHub</b>. Proceedings of the 36th International Conference on Software Engineering  <a href="publications/tsay-icse2014.pdf">(pdf)</a></li>
+    <li> Tsay, J., Dabbish, L. and Herbsleb, J.D. 2013. <b>Social media in transparent work environments</b>. Cooperative and Human Aspects of Software Engineering (CHASE), 2013 6th International Workshop on (2013) <a href="publications/tsay-chase2013.pdf">(pdf)</a></li>
+    <li> Dabbish, L., Stuart, C., Tsay, J. and Herbsleb, J. 2013. <b>Leveraging Transparency </b>. Software, IEEE. 30, 1 (2013), 37–43. <a href="publications/dabbish-ieee2013.pdf">(pdf)</a></li>
+    <li> Dabbish, L., Stuart, C., Tsay, J. and Herbsleb, J. 2012. <b>Social coding in GitHub: transparency and collaboration in an open software repository</b>. Proceedings of the ACM 2012 conference on Computer Supported Cooperative Work <a href="publications/dabbish-cscw2012.pdf">(pdf)</a></li>
+</ul>
+
+<br>
+
+            </div>
+        </div>
     </body>
 </html>
