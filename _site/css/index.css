@@ -11,8 +11,36 @@ a:link { color: rgba(0, 153, 255, 1); text-decoration: none;}
 a:visited { color: rgba(0, 153, 255, 1);}
 a:hover { color: rgba(231, 115, 49, 1);}
 
-.main_container{  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   color: rgba(0, 0, 0, 0.8);  width:1520px;  margin-top: 20px;  margin-left: 80px;  margin-right: 20px;  margin-bottom: 20px;  padding-top: 20px;  padding-left: 20px;  padding-right: 20px;  padding-bottom: 20px; }
-.profile_container{  background-color: rgba(0, 0, 0, 0.25);  /* round the border*/  -moz-border-radius: 10px;  -khtml-border-radius: 10px;  -webkit-border-radius: 10px;  border-radius: 10px;   width:475px;  height:500px;  margin-top: 50px;  margin-left: 0px;  margin-right: auto;  margin-bottom: 40px; }
+.main_container{
+    /* round the border*/
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    color: rgba(0, 0, 0, 0.8);
+    width:1520px;
+    /*margin-top: 20px;  */
+    margin-left: 80px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.profile_container{
+    background-color: rgba(0, 0, 0, 0.25);
+    /* round the border*/
+    -moz-border-radius: 10px;
+    -khtml-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;   width:475px;
+    height:525px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
 .analytics_container{  width:475px;  position: relative;  margin-left: 830px;  margin-right: auto;  margin-top: 60px;  margin-bottom: auto;  text-align: center;  color: rgba(0, 0, 0, 1); }
 
 .header { width: 100%; position: relative; text-align: center; color: white; padding-left: 0px; padding-right: 0px; margin-top:5x; }
@@ -66,11 +94,13 @@ ol, ul { list-style: none; }
 
 .sidebox {
     display: block;
-    position: absolute;
+    position: relative;
     width: 50%;
     /*min-width: 500px;*/
     /*min-height: 250px;*/
-    bottom: 190px;
+    bottom: 480px;
+    /*top: 20px;*/
+    left: 700px;
     right: 20px;
     overflow: hidden;
 }
@@ -89,7 +119,7 @@ ol, ul { list-style: none; }
     background-color: white;
     font-size: 1.0em;
     display: block;
-    max-height: 100px;
+    max-height: 125px;
     opacity: 0.8;
     padding: 10px;
     float: right;
