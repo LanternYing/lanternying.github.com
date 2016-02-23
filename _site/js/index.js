@@ -45,10 +45,6 @@ $(document).ready(function() {
 	$("#pubbutton").click(function() {
 		$.fn.fullpage.moveTo('publication');
 	});
-
-    // $("#blogbutton").click(function() {
-    //     $.fn.fullpage.moveTo('blog');
-    // });
 });
 
 // $(window).resize(function());

@@ -10,3 +10,9 @@ github_username:  jekyll
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+# markdown: kramdown
+# kramdown:
+#   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+#   hard_wrap: false
+# highlighter: rouge
