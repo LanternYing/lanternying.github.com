@@ -74,6 +74,7 @@ ol, ul { list-style: none; }
 .github { width: 32px; float: left;   background: transparent url(../images/github.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
 .twitter { width: 32px; float: left;   background: transparent url(../images/twitter.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
 .weibo { width: 32px; float: left;   background: transparent url(../images/weibo.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
+.weixin { width: 32px; float: left;   background: transparent url(../images/weixin.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
 .cv { width: 32px; float: right;   background: transparent url(../images/cv.png) 0 0 no-repeat; display: block; padding-top: 3px; padding-bottom: 32px; margin-right: 10px; position: relative; margin-bottom:10x; }
 
 .biography{  clear:both;  text-align: left;  padding-left: 20px;  font-family: Lucida Grande,Open Sans,Helvetica, Verdana, sans-serif;  font-size: 13pt;  font-weight: normal;  color: #FFFFFF;  position: relative; }
